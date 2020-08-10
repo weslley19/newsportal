@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+body{
+	margin: 0px;
+	font-family: Arial;
+	font-size: 10pt;
+}
+.topo{
+	height: 30px;   /*altura da barra preta*/
+	background-color: #333333;    /*cor da barra*/
+	color: #fff;
+}
+.topoint{
+	width: 100%;  /*largura da barra preta - resposivo*/
+	max-width: 1040px;   /*tamanho maximo que ficou na imagem modelo*/
+	height: 30px;  /*altura da barra preta*/
+	margin: auto;    /*centralizar a barra de menu*/
+}
+/*parte esquerda de cima*/
+.topoleft{
+	width: 50%;    /*largura da metade*/
+	height: 30px;  
+	float: left;   /*flutauando a esquerda*/
+}
+/*as logos*/
+.toporight{
+	width: 50%
+	height:28px;
+	float: right;
+	margin-top: 2px;
+}
+.topoleft ul{ 
+	margin: 0px;     /*sem margend- menu*/
+	padding: 0px;   /*abaixa o conteudo*/
+	list-style: none;   /*sem bola do menu*/
+}
+.topoleft li{
+	line-height: 30px;  /*alinha vertical*/
+	float: left;
+	margin-left: 8px;   /*distancia entre elementos do menu*/
+	margin-right: 8px;
+}
+.topoleft li a{
+	color: #ffffff;
+	text-decoration: none;   /*tirou o sublinhado*/
+}
+.topoleft li .ativo{     
+	color: blue;    /*link ativado fica azul*/
+}
+.topoleft li a:hover{
+	color: blue;
+}
+/*barra de pesquisa*/
+.topobusca{
+	width:110px;
+	height:25px;
+	padding:0px;  /*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas*/
+	border:0;
+	outline:0;
+}
+.toporight a{
+	float: left;
+}
+.toporigth input{
+	float: right;
+}.toporight img{
+	margin-right: 2px;
+}
+.topo2{
+	height: 95px;   /*altura da barra*/
+	color: #000;
+}
+.topo2int{
+	width: 100%;  /*largura da barra preta*/
+	max-width: 1040px;   /*tamanho maximo que ficou na imagem modelo*/
+	height: 95px;  /*altura da barra*/
+	margin: auto;    /*centralizar a barra de menu*/
+}
+.logo{
+	width: 230px;
+	height: 90px;    /*era 95, colocou 5 de margin ficou 90*/
+	float: left;
+	margin-top: -2px;  /*sempre que usar o marigin diminui no height*/
+}
+.topo2int .banner{        /*publicidade*/
+	width: 650px;
+	height: 80px;
+	float: right;
+	margin-top: 7px;
+	background-color: red;
+}
+.banner{
+	font-size: 20pt;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+}
+.menu{   /*barra interira*/
+	height: 40px;
+	background-color: red;
+}
+.menuint{
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+}
+.menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.menu li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 8px;      /*espacamento interno do menu*/
+	padding-right: 8px;
+}
+.menu li:hover .submenu{    /*menu dropdown - quando passar o mouse ele aparece*/
+	display: block;
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.submenu{
+	width: 150px;
+	height: auto;       /*se ajusta ao conteudo*/
+	position: absolute;
+	background-color: #606060;
+	display: none;
+	box-shadow: 2px 2px 2px #000;
+}
+.submenu-item{
+	width: 135px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 15px;
+}
+.submenu-item:hover{
+	background-color: red;
+}
+.ultimas-noticias{
+	height: 40px;
+}
+.ultimas-noticiasint{
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+}
+.ultnoticias-area{
+	height: 28px;
+	background-color: #fff;      
+	border: 1px solid #ccc;
+	margin-top: 10px;    /*distancia da margem de cima em relacao ao objeto que esta em cima*/
+}
+.noticia-titulo{
+	height: 28px;
+	color: #fff;
+	background-color: red;
+	display: inline-block;
+	line-height: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+}
+.noticias-noticias{
+	height: 28px;
+	color: #000;
+	display: inline-block;
+	line-height: 28px;
+	padding-left: 5px;
+}
+.container-int{
+	width: 100%;
+	max-width: 1040px;
+	margin: auto;
+}
+.leftside{
+	width: 753px;        /*1040(total do site) - 12 - 275 = 753*/
+	float: left;
+}
+.rightside{
+	width: 275px;
+	min-height: 200px;
+	float: right;
+	margin-left: 12px;
+}
+.widget{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.widget-titulo{
+	background-color: #ddd;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size: 11pt;
+}
+.widget-conteudo{
+	padding-top: 5px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+.noticias-textos{
+	font-size: 11pt;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	margin: 5px;       /*distancia interna das margens*/
+	padding: 5px;         /*distancia interna*/
+}
+.noticias-textos a{
+	color: #000;
+	text-decoration: none;
+}
+.slideshow{
+	background-color: #ccc;
+	height: 335px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.slideshowarea{
+	width: 100000px;
+	height: 335px;
+	background-color: #ddd;
+	transition: all 1s;
+}
+.slide{
+	height: 335px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: cover;
+}
+.slideinfo{
+	height: 70px;
+	background-image: url('../imagens/slideshow_bg.png');
+	background-size: auto 70px;
+	margin-top: 265px;
+}
+.slideinfo-titulo{
+	font-size: 15pt;
+	color: #fff;
+	padding-top: 15px;
+	padding-left: 8px;
+}
+.slideinfo-subtitulo{
+	font-size: 10pt;
+	color: #fff;
+	padding-left: 8px;
+}
+.slidebolinha{
+	position: absolute;
+	width: 200px;
+	height: 20px;
+}
+.bolinha{
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin: 3px;
+	cursor: pointer;
+	background-color: #000;
+	border-radius: 10px;
+}
+.noticiaarea1{
+	float: left;
+	width: 431px;
+	height: 420px;
+}
+.noticiaarea2{
+	float: left;
+	width: 320px;
+	height: 420px;
+}
+.noticiaitem{
+	float: left;
+	text-align: left;
+	height: 88px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+.noticiaimg{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	float: left;
+}
+.noticiatitulo{
+	float: left;
+	font-size: 15px;
+	margin-left: 6px;
+	width: 226px;
+}
+.noticiainfo{
+	width: 226px;
+	font-size: 8pt;
+	margin-left: 6px;
+	color: #999;
+	float: left;
+}
+.noticiabig{
+	margin-left: 10px;
+}
+.noticiabig .noticiaimg{
+	width: 384px;
+	height: 222px;
+}
+.noticiabig .noticiaimg img{
+	width: 384px;
+	height: 222px;
+}
+.noticiabig .noticiatitulo{
+	width: 384px;
+	font-size: 20pt;
+}
+
+/*parte resposiva*/
+@media only screen and (max-width: 1057px;){
+	.topoint,
+	.topo2int,
+	.menuint,
+	.ultimas-noticiasint,
+	.container-int{
+		max-width: 890px;
+	}
+	.leftside{
+		max-width: 600px;
+	}
+}
